@@ -1,0 +1,160 @@
+@font-face {
+  font-family: 'YoungSerif';
+  src: url('assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('assets/fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #f3e6d8;
+    font-family: 'Outfit';
+    color: #302d2c;
+}
+
+h1{
+    font-family: 'YoungSerif',sans-serif;
+    margin-block: 10px;
+    font-weight: 400;
+}
+
+h2{
+    color:#854632;
+    font-family: 'YoungSerif',sans-serif;
+    margin-block: 10px;
+    font-weight: 400;
+}
+
+h3{
+    color:#7b284f;
+}
+
+p{
+    margin-block: 20px;
+}
+
+table{
+    width:100%;
+    padding-inline: 20px;
+
+}
+
+td{
+    border-bottom: .5px solid #e4ded8;
+    padding-block: 15px;
+}
+
+table tr:last-child td{
+    border-bottom: none;
+}
+
+
+
+section{
+    padding-block: 10px;
+    border-bottom: .5px solid #e4ded8;
+}
+
+ul,ol{
+    padding-left: 20px;
+}
+
+li{
+    margin-block: 10px;
+}
+
+li::marker{
+    color:#854632;
+    font-weight: 600;
+}
+
+ul{
+    list-style: square;
+}
+
+ul li::marker{
+    font-size: .6rem;
+}
+
+
+
+span{
+    font-weight: 600;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction:column;
+    max-inline-size:650px;
+    margin: 70px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 17px;
+
+}
+
+.wrapper img{
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.content{
+    padding: 0;
+}
+
+
+@media(width<600px){
+    
+    .wrapper{
+        margin: 0;
+        border-radius: 0;
+        padding: 0;
+        max-inline-size: none;
+    }
+
+    .wrapper img{
+        width:100%;
+        display: block;
+        border-radius: 0;
+    }
+
+    .content{
+        padding: 20px;
+    }
+
+}
+
+
+
+.pink-background{
+    background-color: #fff5fa;
+    padding:20px;
+    list-style: circle;
+    border-radius: 15px;
+}
+
+.pink-background li::marker{
+    color:#7b284f;
+}
+
+.brown-color{
+    color:#854632;
+    font-weight: 600;
+}
+
+.no-border-bottom{
+    border-bottom: none;
+}
